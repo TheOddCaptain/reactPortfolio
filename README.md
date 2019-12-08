@@ -1,6 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Creating a new portfolio with React.
 
-I am using this git repository to practice react and how to fetch/commit files to github so as to simulate a work environment.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
