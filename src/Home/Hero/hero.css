@@ -1,0 +1,16 @@
+
+.welcome {
+    background-image: url("welcome-photo-large.jpg");
+    min-height: 45vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+   }
+
+   .wrapper-welcome {
+    position: relative;
+    padding-top: 20vh;
+}

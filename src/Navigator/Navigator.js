@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import styles from './navigator.css'
+import './navigator.css'
 
 class Navigator extends Component {
     state = {  }
@@ -10,11 +10,11 @@ class Navigator extends Component {
         <nav className="nav-checkbox">
           <a href="" className="logo"></a>
             <input id="tab-nav" type="checkbox" className="tab-nav"/>
-              <label for="tab-nav" className="tab-nav-label">Menu</label>
+              <label htmlFor="tab-nav" className="tab-nav-label">Menu</label>
                 <ul className="tab-content">
                   <li><a href=""> home </a></li>
-                  <li><a href=""> who am i </a></li>
-                  <li><a href=""> contact me </a></li>
+                  <li><a href=""> about </a></li>
+                  <li><a href=""> contact</a></li>
                 </ul>
         </nav>
     </div> 

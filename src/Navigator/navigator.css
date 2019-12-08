@@ -1,10 +1,21 @@
 /* NAVIGATOR */
+@import url('https://fonts.googleapis.com/css?family=Sulphur+Point&display=swap');
 /* ------------------------------------------------------------*/
+* {
+    margin: 0;
+}
+
 .nav-container {
     width: 90%;
     margin: auto;
     text-transform: uppercase;
     padding-bottom: .2em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 1.1em;
+    box-sizing: border-box;
 }
 
 nav {
@@ -15,11 +26,12 @@ nav {
 
 .logo {
     grid-column: 1;
-    background: url();
-    height: 150%;
+    background: url(../Images/logo/beard-logo.png);
+    height: 120%;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    margin-left: 20%;
 }
 
 .tab-nav {
@@ -98,35 +110,32 @@ nav {
 }
 
 @media (min-width: 1200px) {
-.project-2 .box{
-    margin-bottom: 0;
-    }
-    .tab-content {
-    display: block;
-    overflow: visible;
-    grid-column: 2/4;
-    list-style: none;
-    text-align: left;
-    margin-bottom: 20px;
-    }
-    .tab-content li {
+.tab-content {
+display: block;
+overflow: visible;
+grid-column: 3/4;
+list-style: none;
+text-align: center;
+margin-bottom: 20px;
+}
+.tab-content li {
+padding: 0;
+margin: 0 20px;
+}
+.nav-checkbox input:checked ~ .tab-content {
+max-height: 0;
+}
+.nav-container {
+    margin: 1em 0;
     padding: 0;
-    margin: 0 20px 15px 20px;
-    }
-    .nav-checkbox input:checked ~ .tab-content {
-    max-height: 0;
-    }
-    .nav-container {
-        margin-top: 0em;
-        padding: 1em 0;
-    }
-    .tab-nav-label {
-    display: none;
-    }
-    .tab-content li {
-    display: inline-block;
-    }
-    .logo {
-        background-position: left;
-    }
+}
+.tab-nav-label {
+display: none;
+}
+.tab-content li {
+display: inline-block;
+}
+.logo {
+    height: 200%;
+}
 }
