@@ -1,0 +1,132 @@
+/* NAVIGATOR */
+/* ------------------------------------------------------------*/
+.nav-container {
+    width: 90%;
+    margin: auto;
+    text-transform: uppercase;
+    padding-bottom: .2em;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.logo {
+    grid-column: 1;
+    background: url();
+    height: 150%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tab-nav {
+    outline: none;
+    display: none;
+    grid-column: 3;
+}
+
+.nav-checkbox input:checked ~ .tab-content {
+    max-height: 25em;
+    padding-bottom: .3em;
+}
+
+.tab-nav-label {
+    cursor: pointer;
+    grid-column: 3;
+    display: block;
+    color: black;
+}
+
+.tab-content {
+    grid-column: 2;
+    display: block;
+    list-style: none;
+    text-align: center;
+    max-height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all ease-in-out 0.4s;
+    -o-transition: all ease-in-out 0.4s;
+    -webkit-transition: all ease-in-out 0.4s;
+}
+
+.tab-content li {
+    display: block;
+    padding-top: .625em;
+}
+
+.tab-content li a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.tab-content li a::before {
+    content: '';
+    display: block;
+    height: .1875em;
+    background: black;
+    position: absolute;
+    bottom: -.3125em;
+    left: 0;
+    right: 0;
+    transform-origin: left;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+}
+.tab-content li a:hover::before {
+    transform: scale(1,1);
+}
+.tab-content li a::after {
+    content: '';
+    display: block;
+    height: .1875em;
+    background: black;
+    position: absolute;
+    top: -.3125em;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+}
+.tab-content li a:hover::after {
+    transform: scale(1,1);
+}
+
+@media (min-width: 1200px) {
+.project-2 .box{
+    margin-bottom: 0;
+    }
+    .tab-content {
+    display: block;
+    overflow: visible;
+    grid-column: 2/4;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 20px;
+    }
+    .tab-content li {
+    padding: 0;
+    margin: 0 20px 15px 20px;
+    }
+    .nav-checkbox input:checked ~ .tab-content {
+    max-height: 0;
+    }
+    .nav-container {
+        margin-top: 0em;
+        padding: 1em 0;
+    }
+    .tab-nav-label {
+    display: none;
+    }
+    .tab-content li {
+    display: inline-block;
+    }
+    .logo {
+        background-position: left;
+    }
+}
