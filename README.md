@@ -1,4 +1,6 @@
 Creating a new portfolio with React.
+What I learned:
+*Structure of a React website
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
