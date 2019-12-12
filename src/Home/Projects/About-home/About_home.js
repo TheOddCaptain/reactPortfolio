@@ -6,7 +6,7 @@ class About_home extends Component {
     render() {
         return (
             <div className="project-background">
-                <div className="project"> About </div>
+                <div className="project"> <p className="block-focus">About</p><p className="block-hover">Find out more about me</p></div>
                 </div>
         );
     }

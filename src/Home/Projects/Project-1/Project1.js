@@ -6,7 +6,7 @@ class Project1 extends Component {
     render() {
         return (
             <div className="project-background">
-                <div className="project"> Project #1</div>
+                <div className="project"> <p className="block-focus">Project #1</p><p className="block-hover">Project 1 description</p></div>
                 </div>
         );
     }

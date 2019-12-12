@@ -6,7 +6,7 @@ class Contact_home extends Component {
     render() {
         return (
             <div className="project-background">
-                <div className="project">Contact</div>
+                <div className="project"><p className="block-focus">Contact</p><p className="block-hover">Send me a message</p></div>
                 </div>
         );
     }

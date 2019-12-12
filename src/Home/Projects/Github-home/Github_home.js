@@ -5,8 +5,8 @@ class Github_home extends Component {
     state = {  }
     render() {
         return (
-            <div className="project-background">
-                <div className="project"> Github</div>
+            <div className="project-background github-home">
+                <div className="project "><p className="block-focus">Github</p><p className="block-hover">View my GitHub reposetory</p></div>
                 </div>
         );
     }

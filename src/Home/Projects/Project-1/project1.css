@@ -12,3 +12,14 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.project .block-hover {
+    display: none;
+}
+
+.project-background:hover .block-hover {
+    display: block;
+}
+.project-background:hover .block-focus {
+    display: none;
+}
