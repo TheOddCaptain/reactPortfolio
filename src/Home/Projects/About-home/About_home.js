@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import './about_home.css'
 
-class Project2 extends Component {
+class About_home extends Component {
     state = {  }
     render() {
         return (
             <div className="project-background">
-                <div className="project"> Project #2</div>
+                <div className="project"> About </div>
                 </div>
         );
     }
 }
 
-export default Project2;
+export default About_home;

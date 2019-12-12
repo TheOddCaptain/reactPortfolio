@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import './github_home.css'
 
-class Project2 extends Component {
+class Github_home extends Component {
     state = {  }
     render() {
         return (
             <div className="project-background">
-                <div className="project"> Project #2</div>
+                <div className="project"> Github</div>
                 </div>
         );
     }
 }
 
-export default Project2;
+export default Github_home;

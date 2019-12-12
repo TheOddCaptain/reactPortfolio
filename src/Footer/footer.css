@@ -1,0 +1,30 @@
+.container-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #303036;
+    height: 5vh;
+}
+
+.container-footer a { 
+    color: white;
+    font-size: 2.5em;
+    padding: 0 .5em;
+}
+
+.link-contact-me {
+
+    margin-right: 0;
+    
+}
+
+@media (min-width: 1200px) {
+    .container-footer {
+        text-align: right;
+    }
+    .link-contact-me {
+    padding: 0 1em;
+    margin-right: 15%;
+    }
+}
