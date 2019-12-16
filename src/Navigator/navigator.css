@@ -70,13 +70,14 @@ nav {
     padding-top: .625em;
 }
 
-.tab-content li a {
+.tab-content .link-style {
     text-decoration: none;
     color: black;
     position: relative;
+    margin-left: 1em;
 }
 
-.tab-content li a::before {
+.tab-content .link-style::before {
     content: '';
     display: block;
     height: .1875em;
@@ -89,10 +90,10 @@ nav {
     transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
 }
-.tab-content li a:hover::before {
+.tab-content .link-style:hover::before {
     transform: scale(1,1);
 }
-.tab-content li a::after {
+.tab-content .link-style::after {
     content: '';
     display: block;
     height: .1875em;
@@ -105,7 +106,7 @@ nav {
     transform: scale(0, 1);
     transition: transform ease-in-out 250ms;
 }
-.tab-content li a:hover::after {
+.tab-content .link-style:hover::after {
     transform: scale(1,1);
 }
 
