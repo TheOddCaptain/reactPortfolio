@@ -1,0 +1,11 @@
+.about-container {
+    height: 90vh;
+}
+
+.about-wrapper {
+    margin: 0 20%;
+    padding: 5% 0;
+    height: 90%;
+    display: grid;
+    grid-template-areas: "";
+}
