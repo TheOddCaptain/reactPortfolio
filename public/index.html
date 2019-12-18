@@ -29,5 +29,38 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="script.js">
+      $(document).ready(function() {
+        $('.submit').click(function(event) {
+          event.preventDefault()
+      
+          var name = $('.name').val()
+          var email = $('.email').val()
+          var package = $('.package').val()
+          var message = $('.message').val()
+          var statusElm = $('.status').val()
+          statusElm.empty()
+      
+          if(name.length > 3) {
+            statusElm.append('<div></div>')
+          } else {
+            event.preventDefault()
+            statusElm.append('<div> Who are you field has not been filled in.</div>')
+      
+          if(email.length > 5 && email.includes('@') && email.includes('.')) {
+          } else {
+            event.preventDefault()
+            statusElm.append('<div> Email is not valid.</div>')
+          }
+      
+          if(message.length < 5){
+            event.preventDefault()
+            statusElm.append('<div> Message to short.</div>')
+          } else {
+      
+          }
+        }
+      })
+      </script>
   </body>
 </html>

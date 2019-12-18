@@ -1,11 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .about-container {
-    height: 90vh;
+    height: 100%;
 }
 
 .about-wrapper {
     margin: 0 20%;
-    padding: 5% 0;
+    padding-top: 5%;
     height: 90%;
     display: grid;
-    grid-template-areas: "";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ai"
+    "wai" 
+    "tob"
+    "edu";
+    grid-gap: 1em;
+    
+}
+
+.about-image {
+    background-image: url(./IMG_2023.JPG);
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-area: ai;
+}
+
+.about-background p, .about-background h3 {
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    padding: 1em;
+}
+
+.who-am-i {
+    grid-area: wai;
+}
+.toolbox {
+    grid-area: tob;
+}
+.education {
+    grid-area: edu;
+}
+
+@media (min-width: 1200px) { 
+    .about-wrapper {
+    grid-template-areas: 
+    "ai ai ai"
+    "wai tob edu";
+    grid-template-rows: 1fr 1fr;
+    }
+    .about-container {
+        height: 90vh;
+    }
 }
