@@ -29,7 +29,7 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="script.js">
+    <script>
       $(document).ready(function() {
         $('.submit').click(function(event) {
           event.preventDefault()
@@ -45,7 +45,7 @@
             statusElm.append('<div></div>')
           } else {
             event.preventDefault()
-            statusElm.append('<div> Who are you field has not been filled in.</div>')
+            statusElm.append('<div> "Who are you" field has not been filled in.</div>')
       
           if(email.length > 5 && email.includes('@') && email.includes('.')) {
           } else {
@@ -57,11 +57,9 @@
             event.preventDefault()
             statusElm.append('<div> Message to short.</div>')
           } else {
-      
           }
         }
       })
-    
       </script>
   </body>
 </html>

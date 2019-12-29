@@ -4,7 +4,7 @@
     width: 100%;
     text-align: center;
     background: #303036;
-    height: 5vh;
+    height: 7vh;
 }
 
 .container-footer a { 
@@ -14,14 +14,13 @@
 }
 
 .link-contact-me {
-
-    margin-right: 0;
-    
+    margin-right: 0;  
 }
 
 @media (min-width: 1200px) {
     .container-footer {
         text-align: right;
+        height: 5vh;
     }
     .link-contact-me {
     padding: 0 1em;

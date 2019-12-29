@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .about-container {
     height: 100%;
+    background-color: #F5F5F5;
 }
 
 .about-wrapper {
-    margin: 0 20%;
+    margin: 0 10%;
     padding-top: 5%;
     height: 90%;
     display: grid;
@@ -22,7 +23,7 @@
     background-image: url(./IMG_2023.JPG);
     max-width: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: 10% 50%;
     background-repeat: no-repeat;
     grid-area: ai;
 }
@@ -43,6 +44,31 @@
 .education {
     grid-area: edu;
 }
+.who-am-i, .toolbox, .education {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+    margin-bottom: 1em;
+}
+.toolbox-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "lik cl"
+    "otihu otihu";
+    background-color: #F5F5F5;
+}
+.languages-i-know {
+    grid-area: lik;
+}
+.other-things-i-have-used {
+    grid-area: otihu;
+}
+.currently-learning {
+    grid-area: cl;
+}
+.other-things-i-have-used, .currently-learning, .languages-i-know {
+    text-align: center;
+}
 
 @media (min-width: 1200px) { 
     .about-wrapper {
@@ -50,8 +76,14 @@
     "ai ai ai"
     "wai tob edu";
     grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 20%;
     }
     .about-container {
         height: 90vh;
+    }
+    .about-image {
+        background-size: cover;
+        background-position: center;
     }
 }

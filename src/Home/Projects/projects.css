@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 .container-projects {
     margin: 2em 10%;
     display: grid;
@@ -25,4 +26,41 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 2em 20%;
     }
+}
+
+.project-background {
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+.project-background:hover {
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.3);
+
+}
+.project {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project .block-hover {
+    display: none;
+    text-align: center;
+    width: 11.5em;
+    
+}
+
+.project-background:hover .block-hover {
+    display: block;
+    margin: 0;
+}
+
+.project-background:hover .block-focus {
+    display: none;
+    
 }
