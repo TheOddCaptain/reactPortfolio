@@ -6,11 +6,11 @@ class About_home extends Component {
     state = {  }
     render() {
         return (
-            <div className="project-background">
-                <Link className="link-nostyle" to="/about">
+            
+                <Link className="link-nostyle project-background" to="/about">
                 <div className="project"> <p className="block-focus">About</p><p className="block-hover">Find out more about me</p></div>
                 </Link>
-            </div>
+            
         );
     }
 }

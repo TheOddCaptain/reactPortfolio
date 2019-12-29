@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom'
 
 class Project2 extends Component {
     state = {  }
     render() {
         return (
-            <div className="project-background">
-                <div className="project"> <p className="block-focus">Project #2</p><p className="block-hover">Project 2 description</p></div>
+            <Link className="link-nostyle project-background" to="/about">
+                <div className="project"> 
+                    <p className="block-focus">Project #1</p>
+                    <p className="block-hover">Project 1 description</p>
                 </div>
+            </Link>
         );
     }
 }

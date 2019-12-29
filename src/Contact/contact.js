@@ -27,7 +27,7 @@ const Contact = () => {
         <label>
         Message
           <div className="text-box">
-            <textarea name="message" className="message" rows="10" cols="100">Your message here:</textarea>
+            <textarea name="message" className="message" rows="10" cols="22">Your message here:</textarea>
           </div>
         </label><br/>
           <div  className="status"><br/>

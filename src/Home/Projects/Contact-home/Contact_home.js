@@ -6,11 +6,10 @@ class Contact_home extends Component {
     state = {  }
     render() {
         return (
-            <div className="project-background">
-                <Link className="link-nostyle" to="/contact">
+                <Link className="link-nostyle project-background" to="/contact">
                 <div className="project"><p className="block-focus">Contact</p><p className="block-hover">Send me a message</p></div>
                 </Link>
-            </div>
+            
         );
     }
 }
