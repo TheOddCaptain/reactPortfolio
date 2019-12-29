@@ -5,7 +5,7 @@ class Project1 extends Component {
     render() {
         return (
 
-            <a className="link-nostyle project-background" href="https://jolly-banach-b881d8.netlify.com/" target="_blank">
+            <a className="link-nostyle project-background" href="https://jolly-banach-b881d8.netlify.com/" target="_blank" rel="noreferrer" >
                 <div className="project"> 
                     <p className="block-focus">Project #1 <br/><br/>Budget App</p>
                     <p className="block-hover">A budget app where you can add income and expenses to see how much you have left. 
