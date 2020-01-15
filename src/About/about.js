@@ -11,9 +11,9 @@ const About = () => {
                 <h3>Who am I</h3>
                 <p>
                 Name: Odd Erik Haraldsen <br/>
-Location: Oslo, Norway
-<br/><br/>
-I am a self thought web developer who gets truly excited about programming and all it's possibilities. The reason I went into the field of web development is because I enjoy problem solving and logic. I previously worked as an IT-consultant taking calls helping many people figure out their devices and troubleshooting issues to find the best solution for each of them.
+                Location: Oslo, Norway
+                <br/><br/>
+                I am a self thought web developer who gets truly excited about programming and all it's possibilities. The reason I went into the field of web development is because I enjoy problem solving and logic. I previously worked as an IT-consultant taking calls helping many people figure out their devices and troubleshooting issues to find the best solution for each of them.
                 </p>
                 </div>
                 <div className="toolbox about-background">
@@ -25,13 +25,13 @@ I am a self thought web developer who gets truly excited about programming and a
                 HTML5<br/>
                 CSS3 on grid<br/>
                 JavaScript<br/>
+                React<br/>
                 Python
                 </p>
                 </div>
                 <div className="currently-learning">
                 <p>
                 <u>Learning:</u><br/>
-                React<br/>
                 Redux<br/>
                 Node.js<br/>
                 MongoDB<br/>
@@ -42,6 +42,7 @@ I am a self thought web developer who gets truly excited about programming and a
                 <u>Other things I have used:</u><br/>
                 Github<br/>
                 VS-code<br/>
+                Firebase<br/>
                 Chrome dev tool<br/>
                 Netlify<br/>
                 </p>
