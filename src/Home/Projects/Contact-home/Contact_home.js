@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 import './contact_home.css'
-import {Link} from 'react-router-dom'
+import {Link} from './node_modules/react-router-dom'
 
-class Contact_home extends Component {
+class Contact_Home extends Component {
     state = {  }
     render() {
         return (
@@ -14,4 +14,4 @@ class Contact_home extends Component {
     }
 }
 
-export default Contact_home;
+export default Contact_Home;

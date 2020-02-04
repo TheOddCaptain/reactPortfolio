@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from './node_modules/react';
 import './github_home.css'
-import {Link} from 'react-router-dom'
 
-class Github_home extends Component {
+class Github_Home extends Component {
     state = {  }
     render() {
         return (
@@ -14,4 +13,4 @@ class Github_home extends Component {
     }
 }
 
-export default Github_home;
+export default Github_Home;

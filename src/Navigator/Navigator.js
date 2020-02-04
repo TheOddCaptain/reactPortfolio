@@ -13,7 +13,7 @@ class Navigator extends Component {
 <div>
     <div className="nav-container">
         <nav className="nav-checkbox">
-          <a href="/" className="logo"></a>
+          <a href="/" className="logo"> </a>
             <input id="tab-nav" type="checkbox" className="tab-nav"/>
               <label htmlFor="tab-nav" className="tab-nav-label"><ion-icon name="menu" className="burger-menu-icon"></ion-icon></label>
                 <ul className="tab-content">
