@@ -1,11 +1,11 @@
-import React, { Component } from './node_modules/react';
+import React, { Component } from 'react';
 import './github_home.css'
 
-class Github_Home extends Component {
+class GithubHome extends Component {
     state = {  }
     render() {
         return (
-                <a href="https://github.com/TheOddCaptain" target="_blank" className="link-nostyle project-background github-home" rel="noreferrer">
+                <a href="https://github.com/TheOddCaptain" target="_blank" className="link-nostyle project-background github-home" rel="noopener noreferrer">
                 <div className="project"><p className="block-focus">Github</p><p className="block-hover">View my GitHub</p></div>
                 </a>
 
@@ -13,4 +13,4 @@ class Github_Home extends Component {
     }
 }
 
-export default Github_Home;
+export default GithubHome;

@@ -6,11 +6,14 @@
     <meta name="description" content="Portfolio of projects made by Odd Erik Haraldsen home page">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="keywords" content=" Coder portfolio, Odd Erik Haraldsen, code projects">
+    <meta name="keywords" content=" Coder portfolio, Odd Erik, Haraldsen, code projects">
     <meta name="author" content="Odd E. Haraldsen">
     <meta name="description" content="Web site created using create-react-app"/>
-    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js" defer></script>
+<script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js" defer></script>
+
+
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -31,36 +34,35 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script>
-      $(document).ready(function() {
-        $('.submit').click(function(event) {
-          event.preventDefault()
-      
-          var name = $('.name').val()
-          var email = $('.email').val()
-          var package = $('.package').val()
-          var message = $('.message').val()
-          var statusElm = $('.status').val()
-          statusElm.empty()
-      
-          if(name.length > 3) {
-            statusElm.append('<div></div>')
-          } else {
-            event.preventDefault()
-            statusElm.append('<div> "Who are you" field has not been filled in.</div>')
-      
-          if(email.length > 5 && email.includes('@') && email.includes('.')) {
-          } else {
-            event.preventDefault()
-            statusElm.append('<div> Email is not valid.</div>')
-          }
-      
-          if(message.length < 5){
-            event.preventDefault()
-            statusElm.append('<div> Message to short.</div>')
-          } else {
-          }
-        }
-      })
-      </script>
+    $(".submit").click(function(event) {
+  event.preventDefault();
+
+  var name = $(".name").val();
+  var email = $(".email").val();
+  var package = $(".package").val();
+  var message = $(".message").val();
+  var statusElm = $(".status").val();
+  statusElm.empty();
+
+  if (name.length > 3) {
+    statusElm.append("<div></div>");
+  } else {
+    event.preventDefault();
+    statusElm.append('<div> "Who are you" field has not been filled in.</div>');
+  }
+
+  if (email.length > 5 && email.includes("@") && email.includes(".")) {
+  } else {
+    event.preventDefault();
+    statusElm.append("<div> Email is not valid.</div>");
+  }
+
+  if (message.length < 5) {
+    event.preventDefault();
+    statusElm.append("<div> Message to short.</div>");
+  } else {
+  }
+});
+ </script>
   </body>
 </html>

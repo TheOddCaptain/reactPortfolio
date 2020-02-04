@@ -17,15 +17,15 @@ class Navigator extends Component {
             <input id="tab-nav" type="checkbox" className="tab-nav"/>
               <label htmlFor="tab-nav" className="tab-nav-label"><ion-icon name="menu" className="burger-menu-icon"></ion-icon></label>
                 <ul className="tab-content">
-                  <Link className="link-style" to="/">
-                  <li onClick={this.uncheck}> home </li>
-                  </Link>
-                  <Link className="link-style" to="/about">
-                  <li onClick={this.uncheck}> about </li>
-                  </Link>
-                  <Link className="link-style" to="/contact">
-                  <li onClick={this.uncheck}> contact</li>
-                  </Link>
+                  
+                  <li onClick={this.uncheck}> <Link className="link-style" to="/"> home</Link> </li>
+                  
+                  
+                  <li onClick={this.uncheck}> <Link className="link-style" to="/about"> about</Link> </li>
+                  
+                  
+                  <li onClick={this.uncheck}> <Link className="link-style" to="/contact"> contact</Link></li>
+                  
                 </ul>
         </nav>
     </div> 

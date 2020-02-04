@@ -4,7 +4,7 @@ class Project1 extends Component {
     state = {  }
     render() {
         return (
-            <a className="link-nostyle project-background" href="https://react-with-firebase-fc6a4.web.app/" target="_blank" rel="noreferrer">
+            <a className="link-nostyle project-background" href="https://react-with-firebase-fc6a4.web.app/" target="_blank" rel="noopener noreferrer">
                 <div className="project"> 
                     <p className="block-focus">Project #1<br/><br/>Fullstack App</p>
                     <p className="block-hover">

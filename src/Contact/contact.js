@@ -2,14 +2,16 @@ import React from 'react';
 import './contact.css'
 
 const Contact = () => {
+  
     return (
+
 <div className="form-container">
   <div className="contact-form box">
       <form action="https://formspree.io/erik.har@hotmail.no" method="POST" data-netlify="true">
         <label>
         Fullname/Organisation
           <div className="text-box">
-            <input type="text" name="name" className="name" placeholder="Mandatory" autofocus/>
+            <input type="text" name="name" className="name" placeholder="Mandatory" autoFocus/>
           </div>
         </label><br/>
         <label>
@@ -27,7 +29,7 @@ const Contact = () => {
         <label>
         Message
           <div className="text-box">
-            <textarea name="message" className="message" rows="10" cols="22">Your message here:</textarea>
+            <textarea name="message" defaultValue="" className="message" rows="10" cols="22"></textarea>
           </div>
         </label><br/>
           <div  className="status"><br/>

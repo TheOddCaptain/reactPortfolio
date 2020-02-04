@@ -20,7 +20,7 @@
 }
 
 .about-image {
-    background-image: url(.//IMG_2023.JPG);
+    background-image: url(./IMG_2023.JPG);
     max-width: 100%;
     background-size: cover;
     background-position: 10% 50%;

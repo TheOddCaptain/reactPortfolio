@@ -1,8 +1,8 @@
-import React, { Component } from './node_modules/react';
+import React, { Component } from 'react';
 import './about_home.css'
-import {Link} from './node_modules/react-router-dom'
+import {Link} from 'react-router-dom'
 
-class About_Home extends Component {
+class AboutHome extends Component {
     state = {  }
     render() {
         return (
@@ -15,4 +15,4 @@ class About_Home extends Component {
     }
 }
 
-export default About_Home;
+export default AboutHome;
