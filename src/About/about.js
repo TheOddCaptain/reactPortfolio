@@ -1,5 +1,6 @@
 import React from 'react';
 import './about.css'
+import {Link} from 'react-router-dom'
 
 const About = () => {
     return (
@@ -55,8 +56,12 @@ const About = () => {
                 2017 (autumn)	Energy and environment in construction – engineer HiOA. (not completed)<br/><br/>
                 2012-2015	Building engineer bachelor at HIG. (not completed)<br/><br/>
                 2011-2012	Norwegian army Engineerbataljon at Skjold.<br/><br/>
-                2008-2011	Data and electronic with special study expertise from Rud vgs.<br/>
+                2008-2011	Data and electronic with special study expertise from Rud vgs. <br/><br/>
+                Download resume: &nbsp;
+                <Link to="CV_Odd_Erik_Haraldsen_2020.pdf" target="_blank" download>Norwegian</Link><br/>
+                Contact me if you want it translated
                 </p>
+                
                 </div>
             
             </div>

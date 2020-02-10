@@ -25,6 +25,8 @@ class Navigator extends Component {
                   
                   
                   <li onClick={this.uncheck}> <Link className="link-style" to="/contact"> contact</Link></li>
+
+                  
                   
                 </ul>
         </nav>
